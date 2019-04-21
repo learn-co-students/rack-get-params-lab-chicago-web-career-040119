@@ -1,7 +1,7 @@
 class Application
 
   @@items = ["Apples","Carrots","Pears"]
-  @@cart =  #holds any items in our cart
+  @@cart =  [] #holds any items in our cart
   #the path lives in the HTTP request => we have to inspect env part of our #call function
   def call(env) #env is the variable with all info contained in the request
     resp = Rack::Response.new #Rack is parsing the info
